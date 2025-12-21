@@ -1,7 +1,13 @@
+import Chai from "./chai";
+
 function App() {
   return (
-    <h1> Chai aur react with Vite | Dev </h1>
+    <>
+    <Chai/>
+    <p>this is para</p>
+    </>
   )
 }
 
 export default App
+
