@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Always show number input spinners (WebKit) and style them for visibility */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: inner-spin-button;
+	opacity: 1;
+	width: 22px;
+	height: 22px;
+}
+
+/* Small visual polish for spinner area on supported browsers */
+input[type=number] {
+	position: relative;
+}
+
+/* Fallback styling for browsers that hide spinners — add a subtle right padding */
+input[type=number] { padding-right: 28px; }
+
+/* Make select dropdowns appear above overlays */
+select { z-index: 9999; }
+
+/* Slightly larger default font for the converter UI */
+body { font-size: 16px; }
